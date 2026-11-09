@@ -18,6 +18,16 @@ text-align: center;
 font-size: 20px;
 margin-bottom: 20px;
 }
+.pl{
+    text-align: center;
+    margin: 20px;
+}
+.pl a{
+    font-size:20px;
+    font-weight: bold;
+    color: #020202;
+
+}
 
 .nav1 {
     position:sticky;
