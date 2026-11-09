@@ -1,0 +1,146 @@
+<!DOCTYPE >
+<html  xml:lang="ar" lang="ar" dir="rtl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="cars store" content="store" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>cars</title>
+        <script type="text/javascript" src="jquery-4.0.0.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+ </head> 
+
+<body>
+   <div class="nav1">
+       <a href="home.html">الصفحة الرئيسية</a>
+       <a href="about_us.html">من نحن</a>
+       <a href="#" id="exit-link">خروج</a>
+   </div>
+
+   <table  border="3" align="center" class="tab2">
+      <tr>
+        <th>السيارة</th>
+        <th>الرمز</th>
+        <th>الموديل</th>
+        <th>سنة الصنع</th>
+        <th>السعر اليومي</th>
+        <th>إظهار التفاصيل</th>
+        <th>اختيار</th>
+      </tr>
+      
+      <tr id="car1">
+        <td><img src="images/car1.jpg" alt="jeep" width="80" height="40" /> </td>
+        <td>CR-001</td>
+        <td>jeep</td>
+        <td>2020</td>
+        <td>500000 ل.س</td>
+        <td><input type="checkbox" class="show-details" value="1" /></td>
+        <td><input type="checkbox" class="choosecar" value="1" /></td>
+      </tr>
+      
+        <tr class="details-row" id="details-1">
+          <td colspan="7">الوقود: بنزين || ناقل الحركة: أوتوماتيك || المقاعد: 4 || العداد: 5000 كم || اللون: رمادي</td>
+        </tr>  
+
+      <tr id="car2">
+        <td><img src="images/car2.jpg" alt="byd" width="80" height="40" /></td>
+        <td>CR-002</td>
+        <td>BYD E2</td>
+        <td>2015</td>
+        <td>20000 ل.س</td>
+        <td><input type="checkbox" class="show-details" value="2" /></td>
+        <td><input type="checkbox" class="choosecar" value="2" /></td>
+      </tr>
+      
+        <tr class="details-row" id="details-2">
+          <td colspan="7">الوقود: ديزل || ناقل الحركة: أوتوماتيك || المقاعد: 8 || العداد: 23000 كم || اللون: ازرق</td>
+        </tr>  
+
+      
+      <tr id="car3">
+        <td><img src="images/car3.jpg" alt="chevrolet" width="80" height="40" /></td>
+        <td>CR-003</td>
+        <td>Chevrolet Tahoe</td>
+       <td>2023</td>
+       <td>100000 ل.س</td>
+       <td><input type="checkbox" class="show-details" value="3" /></td>
+        <td><input type="checkbox" class="choosecar" value="3" /></td>
+      </tr>
+      
+        <tr class="details-row" id="details-3">
+          <td colspan="7">الوقود: بنزين || ناقل الحركة: أوتوماتيك || المقاعد: 4 || العداد: 10000 كم || اللون: اخضر</td>
+        </tr>  
+
+      <tr id="car4">
+        <td><img src="images/car4.jpg" alt="mercedes" width="80" height="40" /></td>
+        <td>CR-004</td>
+        <td>Mercedes benz E350</td>
+        <td>2014</td>
+        <td>25000 ل.س</td>
+        <td><input type="checkbox" class="show-details" value="4" /></td>
+        <td><input type="checkbox" class="choosecar" value="4" /></td>
+      </tr>
+      
+        <tr class="details-row" id="details-4">
+          <td colspan="7">الوقود: بنزين || ناقل الحركة: يدوي || المقاعد: 6 || العداد: 8000 كم || اللون: برتقالي</td>
+        </tr>  
+
+      
+      <tr id="car5">
+        <td><img src="images/car5.jpg" alt="Bmw" width="80" height="40" /></td>
+        <td>CR-005</td>
+        <td>BMW</td>
+       <td>2022</td>
+       <td>580000 ل.س</td>
+       <td><input type="checkbox" class="show-details" value="5" /></td>
+        <td><input type="checkbox" class="choosecar" value="5" /></td>
+      </tr>
+      
+        <tr class="details-row" id="details-5">
+          <td colspan="7">الوقود: ديزل || ناقل الحركة: اوتوماتيك || المقاعد: 4 || العداد: 20000 كم || اللون: ابيض </td>
+        </tr> 
+
+      <tr id="car6">
+        <td><img src="images/car6.jpg" alt="byd" width="80" height="40" /></td>
+        <td>CR-006</td>
+        <td>BYD</td>
+        <td>2018</td>
+        <td>40000 ل.س</td>
+        <td><input type="checkbox" class="show-details" value="6" /></td>
+        <td><input type="checkbox" class="choosecar" value="6" /></td>
+      </tr>
+      
+        <tr class="details-row" id="details-6">
+          <td colspan="7">الوقود: بنزين || ناقل الحركة: اوتوماتيك || المقاعد: 4 || العداد: 30000 كم || اللون: ابيض</td>
+        </tr> 
+    </table>
+
+    
+      <button  type="button" class="butstyle" >متـابعـة</button>
+     
+
+   <form id="details" action="#">
+  <fieldset>
+
+   <label for="fullname">  الاسم الكامل  </label>
+      <input type="text" id="fullname" /> <br />
+   <label for="nationalid">   الرقم الوطني </label>
+      <input type="text" id="nationalid" maxlength="11" /> <br />
+   <label for="startdate">  بداية التأجير </label>
+     <input type="date" id="startdate" /> <br />
+   <label for="enddate">نهاية التأجير</label>
+     <input type="date" id="enddate" /> <br />
+   <label for="mobile">رقم الموبايل</label>
+     <input type="text" id="mobile" />  <br />
+   <label for="email">الإيميل</label>
+     <input type="email" id="email" />   <br />
+
+     <button type="submit" class="btn2">ارسال</button>
+
+  </fieldset>
+  </form>
+    
+   
+
+    
+</body>
+</html>
